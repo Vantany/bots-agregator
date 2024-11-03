@@ -1,4 +1,4 @@
 venv
 .env
 back/db
-back/bot.log
+bot.log
