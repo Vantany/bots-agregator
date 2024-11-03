@@ -146,3 +146,288 @@ telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsucc
 2024-11-03 16:04:25,828 - INFO - Команда /bot_list от пользователя: 1263818809
 2024-11-03 16:04:34,116 - INFO - Бот успешно запущен
 2024-11-03 16:04:40,984 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 16:27:48,237 - INFO - Бот успешно запущен
+2024-11-03 16:27:48,717 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 16:28:05,327 - INFO - Команда /start от пользователя: 1263818809
+2024-11-03 16:28:40,048 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 16:29:41,572 - INFO - Бот успешно запущен
+2024-11-03 16:29:46,865 - INFO - Команда /start от пользователя: 1263818809
+2024-11-03 16:29:50,134 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 16:30:29,623 - INFO - Бот успешно запущен
+2024-11-03 17:06:14,105 - INFO - Бот успешно запущен
+2024-11-03 17:06:17,931 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:06:18,168 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+2024-11-03 17:06:18,168 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\bot.py", line 84, in bot_list
+    bot.send_message(message.chat.id, message_text,\
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+
+2024-11-03 17:07:56,275 - INFO - Бот успешно запущен
+2024-11-03 17:08:01,995 - INFO - Команда /start от пользователя: 1263818809
+2024-11-03 17:08:03,516 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:09:19,746 - INFO - Бот успешно запущен
+2024-11-03 17:09:23,636 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:13:46,442 - INFO - Бот успешно запущен
+2024-11-03 17:13:49,944 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:14:38,654 - INFO - Бот успешно запущен
+2024-11-03 17:14:40,388 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:15:05,917 - INFO - Бот успешно запущен
+2024-11-03 17:15:07,843 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:15:28,042 - INFO - Бот успешно запущен
+2024-11-03 17:15:32,067 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:15:32,272 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 83
+2024-11-03 17:15:32,287 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\bot.py", line 79, in bot_list
+    bot.send_message(message.chat.id, message_text,\
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 83
+
+2024-11-03 17:15:46,196 - INFO - Бот успешно запущен
+2024-11-03 17:15:48,374 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:15:48,619 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 83
+2024-11-03 17:15:48,619 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\bot.py", line 79, in bot_list
+    bot.send_message(message.chat.id, message_text,\
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 83
+
+2024-11-03 17:15:54,781 - INFO - Бот успешно запущен
+2024-11-03 17:15:56,461 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:16:27,266 - INFO - Бот успешно запущен
+2024-11-03 17:16:29,602 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:20:50,670 - INFO - Бот успешно запущен
+2024-11-03 17:20:53,072 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:21:10,478 - INFO - Бот успешно запущен
+2024-11-03 17:21:12,543 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:21:45,466 - INFO - Бот успешно запущен
+2024-11-03 17:21:47,886 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:24:03,950 - INFO - Бот успешно запущен
+2024-11-03 17:24:07,237 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:25:53,447 - INFO - Бот успешно запущен
+2024-11-03 17:25:57,535 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:27:02,966 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:27:07,119 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+2024-11-03 17:27:07,119 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\bot.py", line 104, in switch_page
+    bot.send_message(call.message.chat.id, message_text,\
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+
+2024-11-03 17:27:22,533 - INFO - Бот успешно запущен
+2024-11-03 17:27:23,767 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:27:25,681 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+2024-11-03 17:27:25,681 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\bot.py", line 104, in switch_page
+    bot.send_message(call.message.chat.id, message_text,\
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+
+2024-11-03 17:28:46,871 - INFO - Бот успешно запущен
+2024-11-03 17:28:47,284 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:28:49,785 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:28:51,591 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+2024-11-03 17:28:51,600 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\bot.py", line 104, in switch_page
+    bot.send_message(call.message.chat.id, message_text,\
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+
+2024-11-03 17:28:55,479 - INFO - Бот успешно запущен
+2024-11-03 17:28:55,928 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:28:56,580 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:29:00,736 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+2024-11-03 17:29:00,752 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\bot.py", line 104, in switch_page
+    bot.send_message(call.message.chat.id, message_text,\
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+
+2024-11-03 17:31:45,602 - INFO - Бот успешно запущен
+2024-11-03 17:31:46,303 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+2024-11-03 17:31:46,303 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\bot.py", line 105, in switch_page
+    bot.send_message(call.message.chat.id, message_text,\
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+
+2024-11-03 17:31:54,232 - INFO - Бот успешно запущен
+2024-11-03 17:31:56,956 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:32:04,827 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+2024-11-03 17:32:04,827 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\bot.py", line 105, in switch_page
+    bot.send_message(call.message.chat.id, message_text,\
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\back\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
+

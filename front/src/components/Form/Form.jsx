@@ -55,7 +55,7 @@ const Form = () => {
 
     return (
         <div className={"form"}>
-            <h3>Введите данные бота</h3>
+            <h3 style={{color: "--tg-theme-text-color"}}>Введите данные бота</h3>
             <input 
                 className = {"input"} 
                 type = "text" 
