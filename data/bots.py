@@ -2,8 +2,9 @@ import datetime
 import sqlalchemy
 import json
 from .db_session import SqlAlchemyBase
+from sqlalchemy_serializer import SerializerMixin
 
-class Bot(SqlAlchemyBase):
+class Bot(SqlAlchemyBase, SerializerMixin):
     __tablename__ = 'bots'
 
     id = sqlalchemy.Column(sqlalchemy.Integer,

@@ -2,7 +2,7 @@ import sqlalchemy as sa
 import sqlalchemy.ext.declarative as dec
 import sqlalchemy.orm as orm
 from sqlalchemy.orm import Session
-from main import log
+# from main import log
 
 
 SqlAlchemyBase = orm.declarative_base()
@@ -21,7 +21,7 @@ def global_init(db_file):
 
     #conn_str = f'postgresql+psycopg2://postgres:3286@localhost/{db_file}'
     conn_str = f'sqlite:///{db_file.strip()}?check_same_thread=False'
-    log.info(f"Подключение к базе данных по адресу {conn_str}")
+    # log.info(f"Подключение к базе данных по адресу {conn_str}")
 
     engine = sa.create_engine(conn_str, echo=False)
     __factory = orm.sessionmaker(bind=engine)

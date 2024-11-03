@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import telebot
 import logging as log
 from data import db_session
+from data.bots import Bot
 
 log.basicConfig(
     level=log.INFO,
@@ -33,10 +34,29 @@ def send_welcome(message):
     bot.send_message(chat_id, "Добро пожаловать!", reply_markup=keyboard)
 
 
-@bot.message_handler(commands=['start'])
-def send_welcome(message):
-    log.info(f'Команда /start от пользователя: {message.from_user.id}')
-    bot.reply_to(message, "Добро пожаловать!")
+@bot.callback_query_handler(func=lambda call: call.data == "add_bot")
+def add_bot(call):
+    log.info(f'Команда /add_bot от пользователя: {call.from_user.id}')
+
+    pass
+
+
+@bot.callback_query_handler(func=lambda call: call.data == "bot_list")
+def bot_list(call):
+    log.info(f'Команда /bot_list от пользователя: {call.from_user.id}')
+
+    db_sess = db_session.create_session()
+    bots = db_sess.query(Bot).all()
+    db_sess.close()
+
+    message_text = "Список ботов:\n"
+    for ind, element in enumerate(bots[:5]):
+        message_text += f"{ind + 1}.\n"
+        message_text += f"Название: {element.name}\n"
+        message_text += f"Ссылка: {element.url}\n"
+        message_text += f"Описание: {element.description}\n\n"
+
+    bot.send_message(call.message.chat.id, message_text)    
 
 
 if __name__ == '__main__':
