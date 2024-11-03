@@ -1,0 +1,79 @@
+2024-11-03 11:14:26,393 - INFO - Команда /start от пользователя: 1263818809
+2024-11-03 11:18:18,214 - INFO - Бот успешно запущен
+2024-11-03 11:18:24,449 - INFO - Команда /start от пользователя: 1263818809
+2024-11-03 11:24:31,808 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db
+2024-11-03 11:27:53,947 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db?check_same_thread=False
+2024-11-03 11:29:05,737 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db?check_same_thread=False
+2024-11-03 11:33:44,774 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db?check_same_thread=False
+2024-11-03 11:34:04,954 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db?check_same_thread=False
+2024-11-03 11:34:04,970 - INFO - Бот успешно запущен
+2024-11-03 11:34:19,322 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db?check_same_thread=False
+2024-11-03 11:34:19,335 - INFO - Бот успешно запущен
+2024-11-03 11:35:33,592 - INFO - Команда /start от пользователя: 1263818809
+2024-11-03 11:51:38,747 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db?check_same_thread=False
+2024-11-03 11:51:38,757 - INFO - Бот успешно запущен
+2024-11-03 11:51:42,772 - INFO - Команда /start от пользователя: 1263818809
+2024-11-03 11:51:42,982 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: unsupported parse_mode
+2024-11-03 11:51:42,983 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\main.py", line 31, in send_welcome
+    bot.send_message(chat_id, message, "Добро пожаловать!")
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: unsupported parse_mode
+
+2024-11-03 11:52:27,225 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db?check_same_thread=False
+2024-11-03 11:52:27,250 - INFO - Бот успешно запущен
+2024-11-03 11:52:31,437 - INFO - Команда /start от пользователя: 1263818809
+2024-11-03 11:55:03,419 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db?check_same_thread=False
+2024-11-03 11:55:03,429 - INFO - Бот успешно запущен
+2024-11-03 11:55:06,930 - INFO - Команда /start от пользователя: 1263818809
+2024-11-03 11:55:07,137 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+2024-11-03 11:55:07,137 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\__init__.py", line 8945, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\main.py", line 31, in send_welcome
+    bot.send_message(chat_id, "Добро пожаловать!", reply_markup=keyboard)
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\__init__.py", line 1775, in send_message
+    apihelper.send_message(
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\apihelper.py", line 273, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\webapp\bots-agregator\venv\Lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse inline keyboard button: Text buttons are unallowed in the inline keyboard
+
+2024-11-03 11:56:26,270 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db?check_same_thread=False
+2024-11-03 11:56:26,286 - INFO - Бот успешно запущен
+2024-11-03 11:56:29,574 - INFO - Команда /start от пользователя: 1263818809
+2024-11-03 11:56:49,787 - INFO - Подключение к базе данных по адресу sqlite:///db/data.db?check_same_thread=False
+2024-11-03 11:56:49,795 - INFO - Бот успешно запущен
+2024-11-03 11:56:52,846 - INFO - Команда /start от пользователя: 1263818809
