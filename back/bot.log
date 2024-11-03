@@ -431,3 +431,7 @@ Traceback (most recent call last):
     raise ApiTelegramException(method_name, result, result_json)
 telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 60
 
+2024-11-03 17:32:49,344 - INFO - Бот успешно запущен
+2024-11-03 17:32:52,241 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:33:45,222 - INFO - Команда /bot_list от пользователя: 1263818809
+2024-11-03 17:35:21,829 - INFO - Команда /bot_list от пользователя: 1263818809
