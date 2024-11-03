@@ -16,8 +16,8 @@ class Bot(SqlAlchemyBase, SerializerMixin):
     description = sqlalchemy.Column(sqlalchemy.String,
                             index = True, nullable=False, default='')
     
-
-    def make_new(self, name, url, description):
+    def __init__(self, name, url, description):
         self.name = name
         self.url = url
         self.description = description
+        
