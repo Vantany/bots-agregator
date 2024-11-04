@@ -15,9 +15,12 @@ class Bot(SqlAlchemyBase, SerializerMixin):
                             index=True, unique=True, nullable=False)
     description = sqlalchemy.Column(sqlalchemy.String,
                             index = True, nullable=False, default='')
+    image = sqlalchemy.Column(sqlalchemy.String,
+                            index = True, nullable=False)
     
-    def __init__(self, name, url, description):
+    def __init__(self, name, url, description, image):
         self.name = name
         self.url = url
         self.description = description
+        self.image = image
         

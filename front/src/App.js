@@ -16,7 +16,7 @@ function App() {
   return (
       <div className="App">
           <Routes>
-              <Route index element={<Form />}/>
+              <Route path="/form" element={<Form />}/>
           </Routes>
       </div>
   );
